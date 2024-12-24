@@ -89,9 +89,9 @@ UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://graph.org/file/81dc15c1
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
 #7 Days
-PRICE1 = os.environ.get("PRICE1", "50")
+PRICE1 = os.environ.get("PRICE1", "ask owner")
 #1 Month
-PRICE2 = os.environ.get("PRICE2", "ask owner")
+PRICE2 = os.environ.get("PRICE2", "50")
 #3 Month
 PRICE3 = os.environ.get("PRICE3", "ask owner")
 #6 Month
