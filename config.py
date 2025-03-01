@@ -35,7 +35,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002194855220"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
 OWNER_ID = int(os.environ.get("OWNER_ID", "7645440087"))
 #port set to default 8080
-PORT = os.environ.get("PORT", "6246")
+PORT = os.environ.get("PORT", "6245")
 #your database url mongodb only You can use mongo atlas free cloud database
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://sunitverma080:mg0Pd4Pdf0UD0Ou8@merabot1.dcduprk.mongodb.net/?retryWrites=true&w=majority&appName=merabot1")
 #your database name
@@ -48,7 +48,7 @@ START_MSG = os.environ.get("START_MESSAGE", "𝙷𝚎𝚕𝚕𝚘 {first}\n\n�
 #your telegram tag without @
 OWNER_TAG = os.environ.get("OWNER_TAG", "PROVIDER_OG")
 #Time in seconds for message delete, put 0 to never delete
-TIME = int(os.environ.get("TIME", "0"))
+TIME = int(os.environ.get("TIME", "1800"))
 
 
 #Shortner (token system) 
