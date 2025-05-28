@@ -11,8 +11,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002569391368"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002326952308"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002559965853"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001926582280"))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
@@ -31,7 +31,7 @@ APP_ID = int(os.environ.get("APP_ID", "24375843"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "ba42424bf26bff8ac722db3acf3c6c43")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002290948621"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002526544378"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
 OWNER_ID = int(os.environ.get("OWNER_ID", "879520667"))
 #port set to default 8080
@@ -40,7 +40,7 @@ PORT = os.environ.get("PORT", "6245")
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://mendak:harshit9801@cluster0.1ni8o.mongodb.net/?retryWrites=true&w=majority")
 #your database name")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "muthoot")
+DB_NAME = os.environ.get("DB_NAME", "oggy")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "100"))
@@ -62,10 +62,10 @@ https://dashboard.shareus.io/
 # TRUE for yes FALSE if no 
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
-SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "linkshortify.com")
+SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "vplink.in")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e2b3b171baa27212f4bfaa3d64571b18d26f796e")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "73c0cb3df67afdbf88a5b21794e5d1abff695c4c")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "86f7c6e2c22d7484317cc06c4294951fb8ef5d89")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -105,13 +105,13 @@ PRICE5 = os.environ.get("PRICE5", "ask owner")
 #force message for joining the channel
 FORCE_MSG = os.environ.get("FORCE_MSG", "𝚂𝚘𝚛𝚛𝚢 𝙳𝚞𝚍𝚎 𝚈𝚘𝚞 𝙽𝚎𝚎𝚍 𝚃𝚘 𝙹𝚘𝚒𝚗 𝚃𝚑𝚎𝚜𝚎 𝙲𝚑𝚊𝚗𝚗𝚎𝚕𝚜</b>\n\n<b>𝚂𝚘 𝙿𝚕𝚎𝚊𝚜𝚎 𝙲𝚕𝚒𝚌𝚔 𝙱𝚕𝚘𝚠 𝚃𝚘 𝙹𝚘𝚒𝚗 𝙲𝚑𝚊𝚗𝚗𝚎𝚕 🔥</b>")
 #custom caption 
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>None</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b></b>")
 #protected content so that no files can be sent from the bot to anyone. recommended False
 # TRUE for yes FALSE if no
 PROTECT_CONTENT = True if os.environ.get("PROTECT_CONTENT", "TRUE") == "TRUE" else False
 #used if you dont need buttons on database channel.
 # True for yes False if no
-DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE") == "TRUE" else False
+DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "False") == "TRUE" else False
 #you can add admin inside the bot(bug right now will fix later)
 
 try:
